@@ -1,0 +1,26 @@
+* {
+    font-family: Hack Nerd Font Mono;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#waybar {
+    background-color: black;
+    color: #FFFFFF;
+    border-bottom: 1px solid rgba(100, 114, 125, 0.5);
+}
+
+#workspaces button {
+    color: #FFFFFF;
+}
+
+#workspaces button.active {
+    border-bottom: 3px solid white
+}
+
+#cpu,
+#memory,
+#network,
+#pulseaudio {
+    padding: 0 10px;
+}
