@@ -3,7 +3,7 @@ return {
     build = ":TSUpdate",
     main = "nvim-treesitter.configs",
     opts = {
-        ensure_installed = { "lua", "vim", "javascript", "html", "css", "python"},
+        ensure_installed = { "lua", "vim", "javascript", "html", "css", "python", "c", "cpp", "sql"},
         highlight = { enable = true },
         indent = {enable = true },
         incremental_selection = {
