@@ -1,0 +1,17 @@
+{
+  "main function with fast IO": {
+    "prefix": "main",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "int main() {",
+      "    ios_base::sync_with_stdio(false);",
+      "    cin.tie(nullptr);",
+      "",
+      "    $0",
+      "}"
+    ],
+    "description": "C++ main function with fast IO (programação competitiva)"
+  }
+}
