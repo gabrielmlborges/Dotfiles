@@ -4,17 +4,8 @@ vim.opt.number = true
 -- Make relative numbers default
 vim.opt.relativenumber = true
 
--- Enable mouse mode
-vim.opt.mouse = 'a'
-
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
-
--- Enable break indent
-vim.opt.breakindent = true
-
--- Save undo history
-vim.opt.undofile = true
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
