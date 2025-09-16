@@ -1,5 +1,3 @@
--- [[ Basic Keymaps ]]
-
 -- Clear highlights on search when pressing <Esc> in normal mode
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
@@ -11,6 +9,3 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank()
 	end,
 })
-
--- Show diagnostic inline
-vim.keymap.set("n", "<C-=>", "<cmd>lua vim.diagnostic.open_float ()<CR>", { desc = "Open diagnostic message inline" } )

@@ -7,4 +7,3 @@ return {
     highlight = { enable = true }
   }
 }
-
