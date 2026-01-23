@@ -3,7 +3,28 @@ return {
   build = ":TSUpdate",
   main = "nvim-treesitter.configs",
   opts = {
-    ensure_installed = { "lua", "python", "javascript", "typescript", "c", "cpp" },
+    ensure_installed = {
+        -- Neovim essentials
+        "lua",
+        "vim",
+        "vimdoc",
+        "query",
+
+        -- Work use
+        "javascript",
+        "typescript",
+        "html",
+        "css",
+
+        -- Web extra
+        "json",
+        "markdown",
+
+        -- Not use too much
+        "c",
+        "cpp",
+        "python",
+    },
     highlight = { enable = true }
   }
 }
