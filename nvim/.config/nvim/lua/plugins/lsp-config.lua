@@ -9,9 +9,10 @@ return {
         opts = {
             ensure_installed = {
                 "lua_ls",
-                "typescript-language-server",
-                "html-lsp",
-                "css-ls"
+                "ts_ls",
+                "html",
+                "cssls",
+                "jsonls"
             }
         },
         config = function (_, opts)
