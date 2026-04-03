@@ -1,7 +1,12 @@
 return {
     {
         "mason-org/mason.nvim",
-        opts = {},
+        opts = {
+            registries = {
+                "github:mason-org/mason-registry",
+                "github:Crashdummyy/mason-registry"
+            }
+        },
     },
     {
         "mason-org/mason-lspconfig.nvim",
@@ -15,7 +20,7 @@ return {
                 "jsonls"
             }
         },
-        config = function (_, opts)
+        config = function(_, opts)
             require("mason-lspconfig").setup(opts)
             local capabilities = require('blink.cmp').get_lsp_capabilities()
             vim.lsp.config("*", { capabilities = capabilities })
