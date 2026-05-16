@@ -30,7 +30,7 @@ hl.monitor({
 -- Set programs that you use
 local terminal    = "alacritty"
 local fileManager = "yazi"
-local menu        = "wofi"
+local menu        = "wofi --show drun"
 local browser     = "firefox"
 
 
