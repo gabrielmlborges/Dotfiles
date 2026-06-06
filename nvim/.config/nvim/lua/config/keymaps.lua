@@ -10,4 +10,4 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     end,
 })
 
-vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
+vim.keymap.set('t', '<C-space>', [[<C-\><C-n>]], { noremap = true, desc = "Exit terminal mode" })
