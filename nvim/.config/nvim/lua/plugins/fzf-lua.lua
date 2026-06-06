@@ -17,5 +17,6 @@ return {
         { "<leader>s", "<cmd>FzfLua git_status<cr>",            desc = "Git status" },
         { "<leader>d", "<cmd>FzfLua diagnostics_workspace<cr>", desc = "Diagnostics" },
         { "<leader>l", "<cmd>FzfLua lsp_finder<cr>",            desc = "LSP finder" },
+        { "<leader>a", "<cmd>FzfLua lsp_code_actions<cr>",      desc = "Code actions" },
     }
 }
