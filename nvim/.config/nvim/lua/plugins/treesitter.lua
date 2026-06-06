@@ -1,32 +1,29 @@
 return {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
-    main = "nvim-treesitter.configs",
-    opts = {
-        ensure_installed = {
-            -- Neovim essentials
-            "lua",
-            "vim",
-            "vimdoc",
-            "query",
+    'nvim-treesitter/nvim-treesitter',
+    lazy = false,
+    build = ':TSUpdate',
+    config = function()
+        require('nvim-treesitter').install({
+            'c_sharp',
+            'razor',
+            'angular',
+            'typescript',
+            'javascript',
+            'html',
+            'css',
+            'scss',
+            'json',
+            'xml',
+            'markdown',
+            'markdown_inline',
+            'lua',
+        })
 
-            -- Work use
-            "c_sharp",
-            "tsx",
-            "javascript",
-            "typescript",
-            "html",
-            "css",
-
-            -- Web extra
-            "json",
-            "markdown",
-
-            -- Not use too much
-            "c",
-            "cpp",
-            "python",
-        },
-        highlight = { enable = true }
-    }
+        vim.api.nvim_create_autocmd('FileType', {
+            pattern = '*',
+            callback = function()
+                pcall(vim.treesitter.start)
+            end,
+        })
+    end,
 }
