@@ -6,10 +6,10 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- [[ Setting options ]]
-require"config.options"
+require "config.options"
 
 -- [[ Basic Keymaps ]]
-require"config.keymaps"
+require "config.keymaps"
 
 -- [[ Install `lazy.nvim` plugin manager ]]
-require"config.lazy"
+require "config.lazy"
